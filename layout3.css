@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    border: 4px solid lightgray;
+    padding: 24px 24px 0 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box {
+    border: 4px solid lightgray;
+    /*the box won't go down because this height is affecting it so we need to remove this height and instead add margin-bottom: 24px;
+    height: 100px; */
+    margin-bottom: 24px;
+}
+
+.box-small {
+    height: 50%;
+}
+
+.box-wrapper {
+    width: 45%;
+    /* you can do this to add space between the boxes or you can do display: flex and justify-content: space-between which will do the same thing.
+    padding-right: 24px; */
+
+    /* you don't need this here because it is already here by default but for the sake of the lesson we will likst it so you can see what all boxes are by default */
+    /*this is the same as display: block;*/
+    display: flex;
+    flex-direction: column;
+}
+
+.box-large {
+    width: 45%
+}
